@@ -48,7 +48,9 @@ instance.interceptors.response.use(
   
 ```   
 ### 导出后使用即可   
-export default instance   
+```   
+export default instance      
+```
 ### 使用   
 ```   
 import instance from './axios'
