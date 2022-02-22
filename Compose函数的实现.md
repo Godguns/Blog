@@ -19,7 +19,8 @@ console.log(res);    // 结果还是200
 ```javascript   
 // 参数从右往左执行，所以multiply在前，add在后
 let res = compose(multiply, add)(10);
-```   
+```       
+```javascript
 const compose = function(){
   // 将接收的参数存到一个数组， args == [multiply, add]
   const args = [].slice.apply(arguments);
