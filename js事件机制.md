@@ -10,3 +10,8 @@
 比如说只有点击li才会触发?   
 ### 解决方法   
 Event对象提供了一个属性叫target，可以返回事件的目标节点，我们成为事件源，也就是说，target就可以表示为当前的事件操作的dom，但是不是真正操作dom。标准浏览器用ev.target，IE浏览器用event.srcElement
+
+###### js取消默认事件   也可以return false（只在js中有效，react中不可以这样使用）
+> w3c的方法是e.preventDefault()，IE则是使用e.returnValue = false;   
+###### js 取消冒泡   
+> w3c的方法是e.stopPropagation()，IE则是使用e.cancelBubble = true
