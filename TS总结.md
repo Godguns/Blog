@@ -27,4 +27,9 @@ function error(msg: string): never {
 function loopForever(): never {
     while (true) {};
 } //同样程序永远无法运行到函数返回值那一步，即永不存在返回
-```   
+```      
+### any 与 unknown 的区别：   
+unknown 与 any 类似，但使用前必须进行断言或守卫   
+### never 与 void 的区别：   
+用于函数时， never 表示函数用于执行不到返回值那一步（抛出异常或死循环）的返回值类型，即永不存在的值的类型，而 void 则表示没有返回值，不返回或返回 undefined   
+
